@@ -1,0 +1,9 @@
+Sum of first n terms 
+
+class Solution {
+    long sumOfSeries(long N) {
+        // code here
+              long a = N*(N+1)/2;
+             return a*a;
+    }
+}
