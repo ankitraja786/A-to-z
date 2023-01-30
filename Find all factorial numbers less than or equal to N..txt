@@ -1,0 +1,20 @@
+Find all factorial numbers less than or equal to N.
+
+
+class Solution{
+    static ArrayList<Long> factorialNumbers(long N){
+        ArrayList<Long> factList = new ArrayList<>();
+        int i = 1;
+        while( factorial(i) <= N){
+            factList.add(factorial(i));
+            i++;
+        }
+        return factList;
+    }
+    
+    //function to find factorial
+    static long factorial(long n){
+       if(n == 1 || n == 0) return 1;
+       return n*factorial(n-1);
+    }
+}
